@@ -44,6 +44,7 @@ const CalendarComponent = () => {
     <Calendar
       onDayPress={(day) => {
         setSelected(day.dateString);
+        console.log(day);
       }}
       markedDates={{
         [selected]: {

@@ -25,7 +25,7 @@ const SignupScreen = ({ navigation }) => {
       console.log("here");
       await natafServer.post("auth/signup", dto);
       console.log("there");
-      navigation.navigate("Signin");
+      navigation.navigate("signin");
     } catch (error) {
       console.log(error);
     }
@@ -73,7 +73,7 @@ const SignupScreen = ({ navigation }) => {
           style={{ marginTop: 20 }}
           buttonStyle={{ backgroundColor: "blue" }}
         />
-        <TouchableOpacity onPress={() => navigation.navigate("Signin")}>
+        <TouchableOpacity onPress={() => navigation.navigate("signin")}>
           <Text style={styles.signupText}>יש לך כבר משתמש ? התחבר עכשיו</Text>
         </TouchableOpacity>
       </View>

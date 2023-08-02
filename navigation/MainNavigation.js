@@ -28,6 +28,7 @@ export default function MainNavigation() {
     } catch (error) {
       console.error("Error occurred during the GET request:", error);
       logout();
+      setInit(true);
     }
   };
 
@@ -61,6 +62,7 @@ export default function MainNavigation() {
                 headerShown: false,
               }}
             />
+            {}
           </>
         )}
       </Stack.Navigator>
